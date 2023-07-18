@@ -1,4 +1,4 @@
-# Lingua Summer Camp Server(https://summer-camp-server-orcin.vercel.app/)
+# [Lingua Summer Camp Server](https://summer-camp-server-orcin.vercel.app/)
 
 ## Resource
 
