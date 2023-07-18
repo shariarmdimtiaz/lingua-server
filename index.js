@@ -135,11 +135,6 @@ async function run() {
       }
     });
 
-    // app.get("/users", verifyJWT, verifyAdmin, async (req, res) => {
-    //   const result = await usersCollection.find().toArray();
-    //   res.send(result);
-    // });
-
     app.post("/addUser", async (req, res) => {
       const user = req.body;
       const query = { email: user.email };
@@ -404,13 +399,6 @@ async function run() {
       const payment = req.body;
       const insertResult = await paymentCollection.insertOne(payment);
       res.send(insertResult);
-
-      // const query = {
-      //   _id: { $in: payment.cartItems.map((id) => new ObjectId(id)) },
-      // };
-      // const deleteResult = await cartCollection.deleteMany(query);
-
-      // res.send({ insertResult, deleteResult });
     });
 
     //update enrollment status
